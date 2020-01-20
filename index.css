@@ -1,0 +1,341 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.text-before-nav h5 {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 4px 10px;
+  text-align: center;
+  color: #f1d8de;
+  background-color: #08003c; 
+  margin: 0rem;
+}
+
+nav {
+  background:unset;
+  text-align: left;
+  color: #f1d8de;
+  height: 5rem;
+  z-index: 1050;
+  max-width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f1d8de;
+  margin-left: 5rem;
+  padding: 16px 20px;
+  display: inline;
+  float: left;
+  text-align: center;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #f1d8de;
+}
+
+.icon-bar {
+  cursor: pointer;
+  transition: all 1s ease;
+  font-size: 24px;
+  color: #f1d8de;
+  height: 24px !important;
+  width: 24px !important;
+}
+
+@media (max-width: 767px)
+{
+  .icon-bar {
+    display: none;
+    visibility: hidden;
+  }
+  .nav-icon-text {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.search-icon {
+  margin-left: 300px;
+  transition: all 1s ease;
+}
+
+.search-icon:hover {
+  cursor: pointer;
+  color: #ac0000;
+}
+
+.nav-icon-text2 {
+  font-weight: bold;
+}
+
+@media (max-width: 767px)
+{
+  .nav-icon-text2 {
+    display: inline-block;
+  }
+}
+
+.icon-bar:hover {
+  color: #ac0000;
+}
+
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
+.sticky {
+  transition: all 1s ease;
+  background-color: #08003c;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* Section Top */
+
+.top {
+  background-image: url(images/top.png);
+  background-position: top center;
+  height: 580px;
+  margin-top:-5rem;
+  padding-top:10rem;
+}
+
+.top h1 {
+  font-size: 60px;
+  color: #f1d8de;
+  line-height: 0.8;
+  font-weight: bold;
+  font-family: "gastromond", "soleil", "Helvetica Neue", Helvetica, Arial;
+  margin-left: 5rem;
+  margin-top: 10rem;
+}
+
+@media (max-width: 767px)
+{
+  .top h1 {
+    writing-mode: vertical-rl;
+    margin-top: 5rem;
+  }
+}
+
+/* Gallery */
+
+.gallery {
+  background-color: #18084d;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .gallery {
+    height: 1650px;
+  }
+}
+
+.gallery section {
+  width: 95vw;
+  display: inline-block;
+  margin-left: 25px;
+  margin-right: 25px;
+  vertical-align: top;
+}
+
+.gallery img {
+  display: block;
+  max-width: 50%;
+  width: 50%;
+  height: auto;
+}
+
+@media (max-width: 767px)
+{
+  .gallery section {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .gallery img {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/* Section Inclusive */
+
+.section-inclusive {
+  background-color: #071e15;
+  margin-top: 25px;
+} 
+
+.section-inclusive img {
+  float: left;
+}
+
+/* Section Ethical */
+
+.section-ethical {
+  background-color: #43006a;
+
+}
+
+.section-ethical img {
+  float: right;
+  text-align: center; 
+}
+
+/* Section Ethical */
+
+.section-wearable {
+  background-color: #211f4e;
+}
+
+.section-wearable img {
+  float: left;
+}
+
+.shop-the-collection {
+  text-align: center;
+  background-color: #18084d;
+  border: solid 2px #f1d8de;
+  color: #f1d8de;
+  padding: 16px 65px;
+}
+
+.shop-the-collection:hover {
+  color: red;
+  border-color: red;
+}
+
+/* Gallery End */
+/* Gallery Accesories */
+
+.gallery-accesories {
+  display: block;
+  background-color: #18084d;
+}
+
+.accesories-container {
+  padding: 24px;
+  text-align: center;
+}
+
+/* Gallery Accesories End */
+
+/* Pure Gold */
+
+.pure-gold {
+  display: block;
+  background-color: #08003c;
+  text-align: center;
+  color: #f1d8de;
+  line-height: 1.5;
+}
+
+.pure-gold img {
+  width: 60%;
+  height: auto;
+}
+
+.pure-gold h5 {
+  color : #ff9e70;
+}
+
+.who-we-are {
+  text-align: center;
+  background-color: #08003c;
+  border: solid 2px #ff9e70;
+  color: #ff9e70;
+  padding: 16px 65px;
+}
+
+.who-we-are:hover {
+  color: #ff7b3d;
+  border-color: #ff7b3d;
+}
+
+/* Pure Gold End */
+
+/* Follow us in Instagram */
+
+.ig-container {
+  background-color: #18084d;
+  width: 100%;
+  height: auto;
+}
+
+.side-left {
+  color: white;
+  text-align: center;
+  background-color: #18084d;
+}
+
+.side-left a {
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.side-left a:hover {
+  color: #ff9e70;
+  text-decoration: none;
+}
+
+.fa-instagram {
+  font-size: 150px;
+}
+
+.follow-botton {
+  text-align: center;
+  background-color: #18084d;
+  border: solid 2px #ff9e70;
+  color: #ff9e70;
+  padding: 16px 65px;
+}
+
+.follow-botton:hover {
+  color: #ff7b3d;
+  border-color: #ff7b3d;
+}
+
+.ig-container img {
+  width: 80%;
+  height: auto;
+}
+
+/* Follow us in Instagram End */
+/* Visit us on SoHo */
+
+.visit-us-soho {
+  background-color: #18084d;
+  text-align: center; 
+}
+
+.visit-us-soho-container {
+  margin-top: 5%;
+  background-color: #08003c;
+  width: 80vw;
+}
+
+.visit-us-soho-container img {
+  width: 50%;
+  height: auto;
+  float: left;
+}
+
+/* Visit us on SoHo End */
